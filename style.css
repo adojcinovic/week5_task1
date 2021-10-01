@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    --blue: #0079FF;
+
+    --lightGray: #697C9A;
+    --lightGrayishBlue: #4B6A9B;
+    --lightBlack: #2B3442;
+    --lightWhiteish: #F6F8FF;
+    --lightWhite: #FEFEFE;
+
+    --darkWhite: #FFFFFF;
+    --darkBlack: rgb(20, 29, 47);
+    --darkNavyBlue: #1E2A47;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    margin-top: 200px;
+}
