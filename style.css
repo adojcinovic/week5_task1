@@ -164,6 +164,7 @@
         display: flex;
         justify-content: space-between;
         /* align-items: center; */
+        width: 100%;
         flex-direction: column;
         margin-left: -45px;
     }
@@ -178,7 +179,7 @@
         /* margin-right: 130px; */
     }
         .name p {
-            margin-bottom: 2px;
+            margin-bottom: 25px;
             font-size: 26px;
             line-height: 38.51px;
             font-weight: 700;
@@ -195,6 +196,8 @@
         line-height: 22.22px;
         font-weight: 400;
         color: #697C9A;
+        max-width: 110px;
+        width: 100%;
     }
     .right {
         display: flex;
@@ -203,7 +206,7 @@
         max-width: 510px;
     }
     .bio {
-        margin-top: -50px;
+        /* margin-top: -50px; */
         margin-left: 183px;
         margin-bottom: 32px;
         padding-left: 24px;
@@ -213,7 +216,6 @@
         color: #4B6A9B;
     }
     .details {
-        max-width: 480px;
         width: 100%;
         margin-left: 202px;
         display: flex;
@@ -229,6 +231,8 @@
             padding-top: 15px;
             padding-bottom: 15px;
             margin-bottom: 37px;
+            max-width: 480px;
+            margin-left: 160px;
         }
             .numbers p {
                 font-size: 13px;
@@ -244,15 +248,21 @@
             }
         .location {
             display: flex;
+            justify-content: space-evenly;
+            margin-right: -100px;
         }
             .location p {
                 margin-left: 19px;
                 font-size: 15px;
                 line-height: 22px;
                 font-weight: 400;
+                max-width: 120px;
             }
             .location-right {
                 margin-left: 62px;
+            }
+            .location-left {
+                margin-right: 20px;
             }
             .city {
                 display: flex;
