@@ -390,7 +390,7 @@
 }   
 
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 500px) {
     .container {
         max-width: 327px;
         margin-top: 31px;
