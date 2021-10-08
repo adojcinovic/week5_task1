@@ -477,4 +477,7 @@
     .twitter {
         margin-bottom: 17px;
     }
+    .visible {
+        display: none;
+    }
 } 
