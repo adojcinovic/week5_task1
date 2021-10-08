@@ -54,13 +54,36 @@ search.addEventListener('click', () => {
             login.innerHTML = '@' + data.login
             avatar.setAttribute('src', `${data.avatar_url}`)
             data.bio ? bio.innerHTML = data.bio : bio.innerHTML = 'This profile has no bio.'
-            joiningDate.innerHTML = new Date(data.created_at).toString().slice(3, 15)
+            joiningDate.innerHTML = 'Joined' + new Date(data.created_at).toString().slice(3, 15)
             repos.innerHTML = data.public_repos
             followers.innerHTML = data.followers
             following.innerHTML = data.following
-            data.location ? city.innerHTML = data.location : city.innerHTML = 'Not available'
-            data.twitter_username ? twitter_username.innerHTML = data.twitter_username : twitter_username.innerHTML = 'Not available'
-            data.company ? company.innerHTML = data.company : company.innerHTML = 'Not available'
+            if (data.location) {
+                city.innerHTML = data.location
+                city.classList.remove('opacity')
+            }
+            else {
+                city.innerHTML = 'Not available'
+                city.classList.add('opacity')
+            }
+            if (data.twitter_username) {
+                twitter_username.innerHTML = data.twitter_username
+                twitter_username.classList.remove('opacity')
+            } else {
+                twitter_username.innerHTML = 'Not available'
+                twitter_username.classList.add('opacity')
+            }
+            if (data.company) {
+                company.innerHTML = data.company
+                company.classList.remove('opacity')
+            } else {
+                company.innerHTML = 'Not available'
+                company.classList.add('opacity')
+            }
             html_url.innerHTML = data.html_url
+            html_url.addEventListener('click', () => {
+                window.open(html_url.innerHTML)
+            })
         })
+        .catch(error => console.log(error))
 })

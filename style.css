@@ -152,7 +152,7 @@
     width: 100%;
 }
     .username img {
-        margin-left: 48px;
+        margin-left: 30px;
         margin-top: 48px;
         max-width: 117px;
         max-height: 117px;
@@ -196,7 +196,7 @@
         line-height: 22.22px;
         font-weight: 400;
         color: #697C9A;
-        max-width: 110px;
+        max-width: 170px;
         width: 100%;
     }
     .right {
@@ -209,7 +209,7 @@
         /* margin-top: -50px; */
         margin-left: 183px;
         margin-bottom: 32px;
-        padding-left: 24px;
+        /* padding-left: 24px; */
         font-size: 15px;
         line-height: 25px;
         font-weight: 400;
@@ -218,6 +218,7 @@
     .details {
         width: 100%;
         margin-left: 202px;
+        padding-left: 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -249,7 +250,9 @@
         .location {
             display: flex;
             justify-content: space-evenly;
-            margin-right: -100px;
+            /* margin-right: -100px; */
+            max-width: 480px;
+            margin-left: 120px;
         }
             .location p {
                 margin-left: 19px;
@@ -333,3 +336,145 @@
 .dark .hosting img {
     filter: brightness(350%);
 }
+.opacity {
+    opacity: 50%;
+}
+
+
+
+
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: 573px;
+    }
+    .card {
+        padding: 40px;
+    }
+    .right {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .joining-date {
+        margin-top: 0;
+        margin-left: 37px;
+    }
+    .name {
+        margin-top: 0;
+    }
+    .name p {
+        margin-bottom: 0;
+    }
+    .bio {
+        margin-left: 0;
+        margin-top: 24px;
+        padding-left: 0;
+    }
+    .username img {
+        margin: 0;
+        padding: 0;
+    }
+    .details {
+        padding-left: 0;
+    }
+    .numbers {
+        margin-left: 0;
+    }
+    .location {
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+    .location-right {
+        margin-left: 120px;
+    }
+}   
+
+
+@media screen and (max-width: 376px) {
+    .container {
+        max-width: 327px;
+        margin-top: 31px;
+    }
+    .card {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .search {
+        padding-left: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-text {
+        padding: 0;
+    }
+    .search-text input::placeholder {
+        font-size: 13px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    .search-text img {
+        width: 20px;
+        height: 20px;
+    }
+    #input-search {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .button {
+        width: 84px;
+    }
+    #button {
+        padding: 12px 15px;
+        width: unset;
+    }
+    .no-result {
+        display: none;
+    }
+    .username img {
+        width: 70px;
+        height: 70px;
+    }
+    .name p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .name span {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .joining-date {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .bio {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .numbers p {
+        font-size: 11px;
+        line-height: 16.3px;
+    }
+    .numbers span {
+        font-size: 16px;
+        line-height: 23.7px;
+    }
+    .location {
+        flex-direction: column;
+    }
+    .location p {
+        font-size: 13px;
+        line-height: 19.25px;
+    }
+    .location-right {
+        margin: 0;
+    }
+    .city  {
+        margin-bottom: 17px;
+    }
+    .link {
+        margin-bottom: 17px;
+    }
+    .twitter {
+        margin-bottom: 17px;
+    }
+} 
