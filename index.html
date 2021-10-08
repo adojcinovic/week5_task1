@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>GitHub Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="light">
+  <div class="container">
+    <div class="top">
+      <p>devfinder</p>
+      <div class="toggle">
+        <input type="button" value="DARK" id="switch">
+        <img src="./assets/icon-moon.svg" alt="light-dark" id="moon-light">
+      </div>
+
+    </div>
+    <div class="search">
+      <div class="search-text">
+        <img src="./assets/icon-search.svg" alt="icon-search">
+        <input id="input-search" type="text" placeholder="Search GitHub username_">
+      </div>
+      <div class="button">
+        <span class="no-result">No results</span>
+        <button id="button">Search</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="personal">
+        <div class="username">
+          <img id="avatar" src="./assets/avatar.svg" alt="avatar">
+          <div class="right">
+
+            <div class="name">
+              <p id="name">the octocat</p>
+              <span id="login">@theoctocat</span>
+            </div>
+            <div class="joining-date">
+              Joined 25 Jan 2011
+            </div>
+          </div>
+        </div>
+        <div id="bio" class="bio">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+        </div>
+      </div>
+      <div class="details">
+        <div class="numbers">
+          <div class="repos">
+            <p>Repos</p>
+            <span id="repos">8</span>
+          </div>
+          <div class="followers">
+            <p>Followers</p>
+            <span id="followers">3938</span>
+          </div>
+          <div class="following">
+            <p>Following</p>
+            <span id="following">9</span>
+          </div>
+        </div>
+        <div class="location">
+          <div class="location-left">
+            <div class="city">
+              <img src="./assets/icon-location.svg" alt="icon-location">
+              <p id="location">San Francisco</p>
+            </div>
+            <div class="link">
+              <img src="./assets/icon-website.svg" alt="icon-website">
+              <p id="html_url">google.com</p>
+            </div>
+          </div>
+          <div class="location-right">
+            <div class="twitter">
+              <img src="./assets/icon-twitter.svg" alt="icon-twitter">
+              <p id="twitter_username">twitter</p>
+            </div>
+            <div class="hosting">
+              <img src="./assets/icon-company.svg" alt="">
+              <p id="company">hosting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

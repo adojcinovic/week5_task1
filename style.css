@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    --blue: #0079FF;
+
+    --lightGray: #697C9A;
+    --lightGrayishBlue: #4B6A9B;
+    --lightBlack: #2B3442;
+    --lightWhiteish: #F6F8FF;
+    --lightWhite: #FEFEFE;
+
+    --darkWhite: #FFFFFF;
+    --darkBlack: rgb(20, 29, 47, 1);
+    --darkNavyBlue: #1E2A47;
+}
+/* LIGHT THEME */
+.light {
+    background-color: #F6F8FF;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 730px;
+    margin-top: 144px;
+    margin-bottom: 145px;
+}
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+    .top p {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 38.51px;
+    }
+    .toggle {
+        display: flex;
+        align-items: center;
+    }
+        #switch {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 19.25px;
+            letter-spacing: 2.5px;
+            font-family: 'Space Mono', monospace;
+            border: none;
+            background-color: inherit;
+        }
+        .toggle-dark {
+            color: #90A4D4;
+        }
+        .toggle img {
+            margin-left: 16px;
+            cursor: pointer;
+        }
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px #4660BB33;
+    background-color: white;
+}
+    .search-text {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 22px;
+    }
+        .search:hover {
+            cursor: pointer;
+        }
+        .search-text input:hover {
+            cursor: pointer;
+        }
+        .search-text input {
+            margin-left: 24px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            background-color: inherit;
+        }
+        .search-text input:focus {
+            outline: none;
+        }
+        .search-text input::placeholder {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+        }
+    .button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 10px;
+        max-width: 222px;
+        width: 100%;
+    }
+        #button {
+            max-width: 106px;
+            width: 100%;
+            padding: 13px 24px;
+            background-color: var(--blue);
+            color: white;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            border-radius: 10px;
+            border: none;
+        }
+        #button:hover {
+            background-color: #60ABFF;
+            cursor: pointer;
+        }
+        .no-result {
+            visibility: hidden;
+            color: red;
+            font-size: 15px;
+            line-height: 22.22px;
+            font-weight: 700;
+        }
+        .visible {
+            visibility: visible;
+            color: red;
+            font-size: 15px;
+            line-height: 22.22px;
+            font-weight: 700;
+        }
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 0 48px 48px;
+    margin-top: 48px;
+    background-color: white;
+    box-shadow: 0px 16px 30px -10px #4660BB33;
+    border-radius: 15px;
+    max-width: 730px;
+    width: 100%;
+}
+    .username img {
+        margin-left: 30px;
+        margin-top: 48px;
+        max-width: 117px;
+        max-height: 117px;
+        /* width: 100%;
+        height: 100%; */
+        border-radius: 50%;
+    }
+    .personal {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        width: 100%;
+        flex-direction: column;
+        margin-left: -45px;
+    }
+    .username {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .name {
+        margin-left: 37px;
+        margin-top: 44px;
+        /* margin-right: 130px; */
+    }
+        .name p {
+            margin-bottom: 25px;
+            font-size: 26px;
+            line-height: 38.51px;
+            font-weight: 700;
+            max-height: 50px;
+        }
+        .name span {
+            font-size: 16px;
+            line-height: 23.7px;
+            color: var(--blue);
+        }
+    .joining-date {
+        margin-top: 52px;
+        font-size: 15px;
+        line-height: 22.22px;
+        font-weight: 400;
+        color: #697C9A;
+        max-width: 170px;
+        width: 100%;
+    }
+    .right {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 510px;
+    }
+    .bio {
+        /* margin-top: -50px; */
+        margin-left: 183px;
+        margin-bottom: 32px;
+        /* padding-left: 24px; */
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #4B6A9B;
+    }
+    .details {
+        width: 100%;
+        margin-left: 202px;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+        .numbers {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #F6F8FF;
+            border-radius: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 37px;
+            max-width: 480px;
+            margin-left: 160px;
+        }
+            .numbers p {
+                font-size: 13px;
+                line-height: 19.25px;
+                font-weight: 400;
+                color: #4B6A9B;
+            }
+            .numbers span {
+                font-size: 22px;
+                line-height: 33px;
+                color: #2B3442;
+                font-weight: 700;
+            }
+        .location {
+            display: flex;
+            justify-content: space-evenly;
+            /* margin-right: -100px; */
+            max-width: 480px;
+            margin-left: 120px;
+        }
+            .location p {
+                margin-left: 19px;
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: 400;
+                max-width: 120px;
+            }
+            .location-right {
+                margin-left: 62px;
+            }
+            .location-left {
+                margin-right: 20px;
+            }
+            .city {
+                display: flex;
+                margin-bottom: 19px;
+            }
+            .link {
+                display: flex;
+            }
+            .link p:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .twitter {
+                display: flex;
+                margin-bottom: 19px;
+            }
+            .hosting {
+                display: flex;
+            }
+
+/* DARK THEME */
+
+.dark {
+    background-color: var(--darkBlack);
+}
+.dark .toggle img {
+    filter: invert(67%) sepia(29%) saturate(397%) hue-rotate(184deg) brightness(91%) contrast(94%);
+}
+.dark p {
+    color: white;
+}
+.dark .joining-date {
+    color: white;
+}
+.dark .search-text input::placeholder {
+    color: white;
+}
+.dark .bio {
+    color: white;
+}
+
+.dark .card {
+    background-color: #1E2A47;
+    box-shadow: none;
+}
+.dark .search {
+    background-color: #1E2A47;
+    box-shadow: none;
+}
+.dark .numbers {
+    background-color: #141D2F;
+}
+.dark .numbers span {
+    color: white;
+}
+.dark .search-text input{
+    color: white;
+}
+.dark .twitter img {
+    filter: brightness(350%);
+}
+.dark .city img {
+    filter: brightness(350%);
+}
+.dark .link img {
+    filter: brightness(350%);
+}
+.dark .hosting img {
+    filter: brightness(350%);
+}
+.opacity {
+    opacity: 50%;
+}
+
+
+
+
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: 573px;
+    }
+    .card {
+        padding: 40px;
+    }
+    .right {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .joining-date {
+        margin-top: 0;
+        margin-left: 37px;
+    }
+    .name {
+        margin-top: 0;
+    }
+    .name p {
+        margin-bottom: 0;
+    }
+    .bio {
+        margin-left: 0;
+        margin-top: 24px;
+        padding-left: 0;
+    }
+    .username img {
+        margin: 0;
+        padding: 0;
+    }
+    .details {
+        padding-left: 0;
+    }
+    .numbers {
+        margin-left: 0;
+    }
+    .location {
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+    .location-right {
+        margin-left: 120px;
+    }
+}   
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 327px;
+        margin-top: 31px;
+    }
+    .card {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .search {
+        padding-left: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-text {
+        padding: 0;
+    }
+    .search-text input::placeholder {
+        font-size: 13px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    .search-text img {
+        width: 20px;
+        height: 20px;
+    }
+    #input-search {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .button {
+        width: 84px;
+    }
+    #button {
+        padding: 12px 15px;
+        width: unset;
+    }
+    .no-result {
+        display: none;
+    }
+    .username img {
+        width: 70px;
+        height: 70px;
+    }
+    .name p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .name span {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .joining-date {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .bio {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .numbers p {
+        font-size: 11px;
+        line-height: 16.3px;
+    }
+    .numbers span {
+        font-size: 16px;
+        line-height: 23.7px;
+    }
+    .location {
+        flex-direction: column;
+    }
+    .location p {
+        font-size: 13px;
+        line-height: 19.25px;
+    }
+    .location-right {
+        margin: 0;
+    }
+    .city  {
+        margin-bottom: 17px;
+    }
+    .link {
+        margin-bottom: 17px;
+    }
+    .twitter {
+        margin-bottom: 17px;
+    }
+} 
